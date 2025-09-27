@@ -85,8 +85,6 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _menuCard(BuildContext context, int index) {
-    final menu = menuList[index];
-
     return Container(
       decoration: BoxDecoration(
           color: const Color.fromARGB(255, 209, 231, 241),
