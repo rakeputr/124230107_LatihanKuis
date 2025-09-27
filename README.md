@@ -1,6 +1,6 @@
 # latihan_kuis
 
-A new Flutter project.
+Project latihan kuis untuk mata kuliah **Praktikum Pemrograman Aplikasi Mobile**.
 
 ## Getting Started
 
