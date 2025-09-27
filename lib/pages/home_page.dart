@@ -11,12 +11,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Color(0xFFEF3C3B),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Halo $username',
+              'Halo, $username!',
               style: TextStyle(fontSize: 18, color: Colors.white),
             ),
             Text(
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           )),
           SizedBox(
-            height: 20,
+            height: 4,
           ),
           Padding(
             padding: EdgeInsets.all(16),
@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
   Widget _menuCard(BuildContext context, int index) {
     return Container(
       decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 209, 231, 241),
+          color: Color.fromARGB(255, 253, 210, 209),
           borderRadius: BorderRadius.circular(20)),
       child: Column(
         children: [
@@ -103,7 +103,10 @@ class HomePage extends StatelessWidget {
           SizedBox(
             height: 15,
           ),
-          Text(menuList[index].name),
+          Text(
+            menuList[index].name,
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
           Text("Harga : Rp ${menuList[index].price}"),
           SizedBox(
             height: 15,
@@ -118,7 +121,7 @@ class HomePage extends StatelessWidget {
             style: ElevatedButton.styleFrom(
                 // minimumSize: Size(double.infinity, 55),
                 foregroundColor: Colors.white,
-                backgroundColor: Colors.blue),
+                backgroundColor: Color(0xFFEF3C3B)),
           )
         ],
       ),

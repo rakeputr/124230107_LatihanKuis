@@ -19,12 +19,12 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.network(
-              'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flutter_logo.svg/1024px-Flutter_logo.svg.png',
+            Image.asset(
+              'assets/images/logo.png',
               height: 200,
             ),
             SizedBox(
-              height: 40,
+              height: 10,
             ),
             Text(
               'Login',
@@ -54,11 +54,11 @@ class _LoginPageState extends State<LoginPage> {
         decoration: InputDecoration(
           hintText: 'Username',
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.blue),
+            borderSide: BorderSide(color: Color(0xFFEF3C3B)),
             borderRadius: BorderRadius.all(Radius.circular(8.0)),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.blue),
+            borderSide: BorderSide(color: Color(0xFFEF3C3B)),
             borderRadius: BorderRadius.all(Radius.circular(8.0)),
           ),
         ),
@@ -78,11 +78,11 @@ class _LoginPageState extends State<LoginPage> {
         decoration: InputDecoration(
           hintText: 'Password',
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.blue),
+            borderSide: BorderSide(color: Color(0xFFEF3C3B)),
             borderRadius: BorderRadius.all(Radius.circular(8.0)),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.blue),
+            borderSide: BorderSide(color: Color(0xFFEF3C3B)),
             borderRadius: BorderRadius.all(Radius.circular(8.0)),
           ),
         ),
@@ -120,7 +120,7 @@ class _LoginPageState extends State<LoginPage> {
         style: ElevatedButton.styleFrom(
             minimumSize: Size(double.infinity, 55),
             foregroundColor: Colors.white,
-            backgroundColor: Colors.blue),
+            backgroundColor: Color(0xFFEF3C3B)),
       ),
     );
   }

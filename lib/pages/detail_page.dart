@@ -18,7 +18,7 @@ class _DetailPageState extends State<DetailPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Detail Order"),
-        backgroundColor: Colors.blue,
+        backgroundColor: Color(0xFFEF3C3B),
         foregroundColor: Colors.white,
       ),
       body: Padding(
@@ -36,7 +36,7 @@ class _DetailPageState extends State<DetailPage> {
             ),
             Text("Harga : Rp ${menuList[widget.index].price}"),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             _orderField(),
             SizedBox(
@@ -69,11 +69,11 @@ class _DetailPageState extends State<DetailPage> {
         decoration: InputDecoration(
           hintText: 'Jumlah Order',
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.blue),
+            borderSide: BorderSide(color: Color(0xFFEF3C3B)),
             borderRadius: BorderRadius.all(Radius.circular(8.0)),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.blue),
+            borderSide: BorderSide(color: Color(0xFFEF3C3B)),
             borderRadius: BorderRadius.all(Radius.circular(8.0)),
           ),
         ),
@@ -95,7 +95,7 @@ class _DetailPageState extends State<DetailPage> {
         style: ElevatedButton.styleFrom(
             minimumSize: Size(double.infinity, 55),
             foregroundColor: Colors.white,
-            backgroundColor: Colors.blue),
+            backgroundColor: Color(0xFFEF3C3B)),
       ),
     );
   }
