@@ -104,7 +104,7 @@ class HomePage extends StatelessWidget {
             height: 15,
           ),
           Text(menuList[index].name),
-          Text("Harga : ${menuList[index].price}"),
+          Text("Harga : Rp ${menuList[index].price}"),
           SizedBox(
             height: 15,
           ),
